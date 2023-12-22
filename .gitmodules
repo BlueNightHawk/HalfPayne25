@@ -1,0 +1,6 @@
+[submodule "funchook"]
+	path = funchook
+	url = https://github.com/kubo/funchook
+[submodule "distorm"]
+	path = distorm
+	url = https://github.com/gdabah/distorm.git

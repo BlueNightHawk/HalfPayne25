@@ -8,7 +8,7 @@
 
 void HL_ImGUI_Init();
 void HL_ImGUI_Deinit();
-void HL_ImGUI_Draw();
+void HL_ImGUI_Draw(SDL_Window *window);
 int HL_ImGUI_ProcessEvent( void *data, SDL_Event* event );
 
 #endif // HL_IMGUI_H

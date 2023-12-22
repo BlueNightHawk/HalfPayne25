@@ -67,6 +67,15 @@
     <Filter Include="Header Files\fmt">
       <UniqueIdentifier>{95f2a920-e7a1-48e4-b143-7a75155935b9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\funchook">
+      <UniqueIdentifier>{132f3509-3f88-4613-8a90-b61567557097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\funchook\distorm">
+      <UniqueIdentifier>{67bb46b8-9fca-4b6b-9127-06c6c558c89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\funchook">
+      <UniqueIdentifier>{73e0ef42-1804-4566-8bc3-988cdfc0e627}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\dlls\crossbow.cpp">
@@ -432,6 +441,42 @@
     <ClCompile Include="..\..\dlls\chicken.cpp">
       <Filter>Source Files\_hl\dlls</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\funchook\src\arch_x86.c">
+      <Filter>Source Files\funchook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\funchook\src\disasm_distorm.c">
+      <Filter>Source Files\funchook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\funchook\src\funchook.c">
+      <Filter>Source Files\funchook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\funchook\src\os_windows.c">
+      <Filter>Source Files\funchook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\operands.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\prefix.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\textdefs.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\insts.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\mnemonics.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\decoder.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\distorm.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\distorm\src\instructions.c">
+      <Filter>Source Files\funchook\distorm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\cl_dll\kbutton.h">
@@ -653,8 +698,16 @@
     <ClInclude Include="..\..\game_shared\shared_memory.h">
       <Filter>Header Files\game_shared</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\common\config.h">
+      <Filter>Header Files\funchook</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\lib\public\game_controls.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\..\funchook\src\prehook-i686-ms.asm">
+      <Filter>Source Files\funchook</Filter>
+    </MASM>
   </ItemGroup>
 </Project>
